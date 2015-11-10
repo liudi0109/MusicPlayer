@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="MusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="2jc-yO-N96">
+                        <rect key="frame" x="10" y="10" width="79" height="79"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2jc-yO-N96" secondAttribute="height" multiplier="1:1" id="NK5-XP-dnJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8e-Bn-1UI">
+                        <rect key="frame" x="109" y="10" width="60" height="24"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.71542919670000005" blue="0.67369293320000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN0-9H-1Lw">
+                        <rect key="frame" x="109" y="69" width="48" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2jc-yO-N96" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RTO-nB-QJg"/>
+                    <constraint firstItem="A8e-Bn-1UI" firstAttribute="top" secondItem="2jc-yO-N96" secondAttribute="top" id="SkO-4j-aP0"/>
+                    <constraint firstItem="2jc-yO-N96" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WcR-3V-LXk"/>
+                    <constraint firstAttribute="bottom" secondItem="2jc-yO-N96" secondAttribute="bottom" constant="10" id="YGJ-Io-z1U"/>
+                    <constraint firstItem="A8e-Bn-1UI" firstAttribute="leading" secondItem="2jc-yO-N96" secondAttribute="trailing" constant="20" id="aK5-ab-S8I"/>
+                    <constraint firstItem="CN0-9H-1Lw" firstAttribute="leading" secondItem="2jc-yO-N96" secondAttribute="trailing" constant="20" id="h0N-OK-c1h"/>
+                    <constraint firstItem="CN0-9H-1Lw" firstAttribute="bottom" secondItem="2jc-yO-N96" secondAttribute="bottom" id="nfx-mk-xKg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="2jc-yO-N96" id="mJ0-Mc-ebp"/>
+                <outlet property="musicLabel" destination="A8e-Bn-1UI" id="Cpq-s2-tO5"/>
+                <outlet property="singerLabel" destination="CN0-9H-1Lw" id="Vqk-8M-Ibd"/>
+            </connections>
+            <point key="canvasLocation" x="283.5" y="268"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1.gif" width="252" height="242"/>
+    </resources>
+</document>
